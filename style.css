@@ -473,6 +473,13 @@ footer .container-grid {
     color: var(--laranja-gamefica);
 }
 
+.menu-fechado{
+    display: none;
+}
+#icone-barras{
+    display: none;
+}
+
 
 
 
@@ -670,4 +677,25 @@ footer .container-grid {
             border-radius: 0;
         }
     }
+
+        @media screen and (max-width:400px) {
+            header img{
+                width: 160px;
+            }
+
+            header svg{
+                width: 40px;
+            }
+
+            .conteudo-banner p{
+                font-size: 20px;
+            }
+
+            footer img{
+                width: 200px;
+            }
+            
+            
+        }
+    
 
