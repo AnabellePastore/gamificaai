@@ -88,27 +88,7 @@ banner.classList.add(slide[indiceSlide])
 
 }
 
-let listaCases = [
-    {
-        imagem: "https://unsplash.it/600/400?image=14",
-        descricao: "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionário devem propor e implementar ideias inovadoras "
-    },
-
-    {
-        imagem: "https://unsplash.it/600/400?image=15",
-        descricao: "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu program de treinamento"
-    },
-
-    {
-        imagem: "https://unsplash.it/600/400?image=16",
-        descricao: "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking "
-    },
-
-    {
-        imagem: "https://unsplash.it/600/400?image=17",
-        descricao: "Uma empresa de saúde promove o bem estar dos funcionários atravéz de um desafio de gamificação de condicionamento físico "
-    },
-]
+let listaCases = []
 
 
 
@@ -129,4 +109,49 @@ const renderizarCases = () => {
     })
 
     elementoLista.innerHTML = template
+}
+
+const carregarCases = () =>{
+    fetch("http://localhost:3000/cases")
+
+    .then( resposta => resposta.json() )
+    .then((dados) => {
+       listaCases = dados
+
+       renderizarCases()
+    })
+//=> outro jeito de representar função
+    .catch (erro => console.error(error))
+}
+
+const solicitarOrcamento = () => {
+    //pegar valores dos inputs
+    let valorNome = document.getElementById("campo-nome").value
+    
+    let valorEmail = document.getElementById("campo-email").value
+   
+    let valorDescricao = document.getElementById("campo-descricao").value
+
+    //organizar objeto com os valores
+    let dadosForm = {
+        nome: valorNome,
+        email: valorEmail,
+        descricao: valorDescricao
+    }
+
+    //enviar requisição para a api
+    //127.0.0.1 -> localhost
+    //método HTTP POST - Crate -> cadastrar ou criar
+    fetch("http://localhost:3000/solicitacoes", {
+        method: "POST",
+        headers:{
+            "Content-Type": "application/json"
+        }
+
+    })
+    
+
+    //limpar os campos
+    //mostrar alert com mensagem de sucesoo
+    //CASO ERRO - alert com mensagem erro
 }
