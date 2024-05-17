@@ -1,24 +1,82 @@
 {
-    "cases": [
-        {
-            "imagem": "https://unsplash.it/600/400?image=14",
-           " descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionário devem propor e implementar ideias inovadoras "
-        },
-    
-        {
-            "imagem": "https://unsplash.it/600/400?image=15",
-            "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu program de treinamento"
-        },
-    
-        {
-            "imagem": "https://unsplash.it/600/400?image=16",
-            "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking "
-        },
-    
-        {
-            "imagem": "https://unsplash.it/600/400?image=17",
-            "descricao": "Uma empresa de saúde promove o bem estar dos funcionários atravéz de um desafio de gamificação de condicionamento físico "
-        }
-    ],
-    "solicitacoes": []
+  "cases": [
+    {
+      "imagem": "https://unsplash.it/600/400?image=14",
+      " descricao": "Uma empresa de tecnologia lança um desafio de gamificação onde os funcionário devem propor e implementar ideias inovadoras "
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=15",
+      "descricao": "Uma empresa de consultoria cria uma narrativa interativa de gamificação para seu program de treinamento"
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=16",
+      "descricao": "Uma empresa de vendas implementa uma competição gamificada entre equipes que competem pelo topo do ranking "
+    },
+    {
+      "imagem": "https://unsplash.it/600/400?image=17",
+      "descricao": "Uma empresa de saúde promove o bem estar dos funcionários atravéz de um desafio de gamificação de condicionamento físico "
+    }
+  ],
+  "solicitacoes": [
+    {
+      "id": "539a",
+      "nome": "Thiago",
+      "email": "thiago@email.com",
+      "descricao": "Os alunos de jogos digitais, são \"excelentes\""
+    },
+    {
+      "id": "f3c1",
+      "nome": "xbzdndfnDN",
+      "email": "hERHerhE@gmail.com",
+      "descricao": "vwhevoiwhhvwehvpewihvp"
+    },
+    {
+      "id": "d8b6",
+      "nome": "khcgiçuvhfliy",
+      "email": "jopjihipjhipi@gmail.com",
+      "descricao": "whrpçvhwprpçghwr"
+    },
+    {
+      "id": "1ad1",
+      "nome": "gllglglglu",
+      "email": "",
+      "descricao": ""
+    },
+    {
+      "id": "59cb",
+      "nome": "njfdgmjzk",
+      "email": "dfjnjDTj@gmail",
+      "descricao": "ASDFGHJK"
+    },
+    {
+      "id": "6c6e",
+      "nome": "aesdghjbk",
+      "email": "ASDZfxgch@gmail.com",
+      "descricao": "SWdfzGXH"
+    },
+    {
+      "id": "ffdf",
+      "nome": "SDFGHJK",
+      "email": "SDFGHJ@GMAIL.COM",
+      "descricao": "qwsedfghn"
+    },
+    {
+      "id": "e2c1",
+      "nome": "edfghj",
+      "email": "awsedfgh@gmail.com",
+      "descricao": "wrestrdyjkl"
+    },
+    {
+      "id": "6bb0",
+      "nome": "sdfghjmk,",
+      "email": "asdfghnjm@gmail.com",
+      "descricao": "qwertyhujik"
+    },
+    {
+      "id": "ab65",
+      "nome": "asdfghjmk,",
+      "email": "wsedrfghjk@gmail.com",
+      "descricao": ""
+    }
+  ]
 }

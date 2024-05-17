@@ -124,7 +124,7 @@ const carregarCases = () =>{
     .catch (erro => console.error(error))
 }
 
-const solicitarOrcamento = () => {
+const solicitarOrcamento = (event) => {
     //pegar valores dos inputs
     let valorNome = document.getElementById("campo-nome").value
     
@@ -146,12 +146,31 @@ const solicitarOrcamento = () => {
         method: "POST",
         headers:{
             "Content-Type": "application/json"
-        }
+        },
+        body: JSON.stringify(dadosForm)
 
     })
+    .then(resposta => {
+        console.log(resposta)
+
+       //limpar os campos
+        document.querySelector("#contato form").reset()
+
+        //mostrar alert com mensagem de sucesso
+        alert("Solicitação cadastrada")
+
+
+
+
+    })
+             //CASO ERRO - alert com mensagem erro
+    .catch(erro => {
+        console.error(erro)
+        alert("Erro na requisição")
+        })
     
 
-    //limpar os campos
-    //mostrar alert com mensagem de sucesoo
-    //CASO ERRO - alert com mensagem erro
+    event.preventDefault()
+    
+
 }
